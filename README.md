@@ -30,9 +30,9 @@ int CheckTotalSpace(bool isExternalStorage = true);
 ///////////////////////////////////////////////////////////////////////
 /// Additional methods for Windows
 
-int CheckAvailableSpace(string drive = “C:/“); 
-int CheckBusySpace(string drive = “C:/“);
-int CheckTotalSpace(string drive = “C:/“);
+int CheckAvailableSpace(string drive = "C:/"); 
+int CheckBusySpace(string drive = "C:/");
+int CheckTotalSpace(string drive = "C:/");
 string[] GetDriveNames();
 
 ///////////////////////////////////////////////////////////////////////
