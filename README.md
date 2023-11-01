@@ -1,9 +1,7 @@
-This library is maintained by Active Theory Inc.
-
-This is a fork of the `simple-disk-utils` asset by M Dikra Prasetya, Available on Unity Asset Store: http://u3d.as/qF1.
+This is a fork of the `simple-disk-utils` by Active Theory Inc. (keerthik) what is a fork of `simple-disk-utils` asset by M Dikra Prasetya.
 
 # simple-disk-utils
-Disk/storage capacity check helper methods for Windows, OSX, iOS, and Android platform. 
+Disk/storage capacity check helper methods for Windows, Linux, OSX, iOS, and Android platform. 
 
 Simply checks available, busy, and total storage space of your platform. File managing functions like save and delete to text or binary file with special cases handling are also provided.
 
@@ -12,7 +10,7 @@ The implementation for each platforms are also can be found in this repository.
 If you have any idea on improvement or anything, please feel free to contribute!
 
 ## Implemented Methods
-```
+```c#
 
 ///////////////////////////////////////////////////////////////////////
 /// For all platforms. These methods return space size in Mega Bytes.
@@ -53,7 +51,7 @@ T ByteArrayToObject<T> (byte[] bytes);
 If the definitions are not clear enough, please see the included sample scene in the project.
 
 ## Notes
-1. Tested on Windows, OSX, iOS, and Android platform.
+1. Tested on Windows, Linux, OSX, iOS, and Android platform.
 2. Implemented file handling methods are not including methods that are already covered in standard library (most likely on System.IO).
 
 

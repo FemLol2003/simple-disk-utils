@@ -131,6 +131,47 @@ namespace SimpleDiskUtils
             return Directory.GetLogicalDrives();
         }
 
+#elif UNITY_STANDALONE_LINUX || UNITY_EDITOR_LINUX
+
+        [DllImport("DiskUtilsLinux")]
+        private static extern int getAvailableDiskSpace(StringBuilder drive);
+
+        [DllImport("DiskUtilsLinux")]
+        private static extern int getTotalDiskSpace(StringBuilder drive);
+
+        [DllImport("DiskUtilsLinux")]
+        private static extern int getBusyDiskSpace(StringBuilder drive);
+
+
+        private const string DEFAULT_DRIVE = "/";
+        
+	    /// <summary>
+	    /// Checks the available space.
+	    /// </summary>
+	    /// <returns>The available space in MB.</returns>
+	    public static int CheckAvailableSpace()
+		{
+            return DiskUtils.getAvailableDiskSpace(new StringBuilder(DEFAULT_DRIVE));
+	    }
+
+	    /// <summary>
+	    /// Checks the total space.
+	    /// </summary>
+	    /// <returns>The total space in MB.</returns>
+	    public static int CheckTotalSpace()
+		{
+            return DiskUtils.getTotalDiskSpace(new StringBuilder(DEFAULT_DRIVE));
+	    }
+
+	    /// <summary>
+	    /// Checks the busy space.
+	    /// </summary>
+	    /// <returns>The busy space in MB.</returns>
+	    public static int CheckBusySpace()
+		{
+		    return DiskUtils.getBusyDiskSpace(new StringBuilder(DEFAULT_DRIVE));
+	    }
+		
 #else
 
         private const long MEGA_BYTE = 1048576;
