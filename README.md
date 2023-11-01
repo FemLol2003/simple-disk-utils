@@ -1,5 +1,3 @@
-This is a fork of the `simple-disk-utils` by Active Theory Inc. (keerthik) what is a fork of `simple-disk-utils` asset by M Dikra Prasetya.
-
 # simple-disk-utils
 Disk/storage capacity check helper methods for Windows, Linux, OSX, iOS, and Android platform. 
 
@@ -57,4 +55,4 @@ If the definitions are not clear enough, please see the included sample scene in
 
 ## License
 
-MIT.
+[MIT License](LICENSE)
