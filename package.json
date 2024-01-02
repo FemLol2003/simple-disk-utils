@@ -1,6 +1,6 @@
 {
   "name": "com.femlolstudio.diskutils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Simple Disk Utils",
   "description": "Useful cross-platform analysis of device disk. Updated by Active Theory Inc for modern UPM support, Linux support added by FémLol Stúdió.",
   "unity": "2020.3",

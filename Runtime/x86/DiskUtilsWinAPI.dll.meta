@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 077c7c499d55eb842b6544ceceb45723
+guid: 2723dd3629a722e41bc4cbabc67f55dd
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -11,6 +11,20 @@ PluginImporter:
   isExplicitlyReferenced: 0
   validateReferences: 1
   platformData:
+  - first:
+      : Any
+    second:
+      enabled: 0
+      settings:
+        Exclude Android: 1
+        Exclude Editor: 1
+        Exclude Linux64: 0
+        Exclude OSXUniversal: 0
+        Exclude WebGL: 1
+        Exclude Win: 0
+        Exclude Win64: 1
+        Exclude iOS: 1
+        Exclude tvOS: 1
   - first:
       : Linux
     second:
@@ -48,7 +62,8 @@ PluginImporter:
     second:
       enabled: 0
       settings:
-        CPU: AnyCPU
+        AndroidSharedLibraryType: Executable
+        CPU: ARMv7
   - first:
       Any: 
     second:
@@ -57,9 +72,9 @@ PluginImporter:
   - first:
       Editor: Editor
     second:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: x86
+        CPU: AnyCPU
         DefaultValueInitialized: true
         OS: Windows
   - first:
@@ -83,9 +98,9 @@ PluginImporter:
   - first:
       Standalone: Win64
     second:
-      enabled: 1
+      enabled: 0
       settings:
-        CPU: AnyCPU
+        CPU: None
   - first:
       Windows Store Apps: WindowsStoreApps
     second:
@@ -100,6 +115,16 @@ PluginImporter:
     second:
       enabled: 0
       settings:
+        AddToEmbeddedBinaries: false
+        CPU: AnyCPU
+        CompileFlags: 
+        FrameworkDependencies: 
+  - first:
+      tvOS: tvOS
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
         CompileFlags: 
         FrameworkDependencies: 
   userData: 
